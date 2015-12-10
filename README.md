@@ -16,7 +16,11 @@ and Amazon Web Services Keys (that you will need in order to access your queues 
 For more detailed information, please, refer to this project's Wiki (W.I.P)
 
 # Exporting the Database
-As people kept requesting me, i decided to export the database on it's current state, which you can find on this link (containing the records as JSON): https://s3.amazonaws.com/GooglePlayStore/Apple%20Store%20JSON.zip
+As people kept requesting me, i decided to export the database on it's current state. I you want the exported file, get in touch with me at : marcello.grechi@gmail.com, and I will send you the file. (I decided not to keep the file public, because there were people downloading the same file over and over again, and not paying for it, which led to a huge AWS bill that I had to pay).
+
+Have in mind that downloading the database costs me money, since i pay for the outbound traffic provided by AWS when you query the database So, consider making a donation (via paypal) to marcello.grechi@gmail.com (Pay what you want, Humble Bundle style).
+
+Alternativelly, you can use the "AppsExporter" project that i included to write your own query logic, exporting only the records / fields you need, which will be cheaper than downloading the whole database.
 
 Have in mind that downloading the database costs me money, since i pay for the outbound traffic provided by AWS when one queries the database
 So, consider making a donation (via paypal) to marcello.grechi@gmail.com (the value is up to you).
@@ -24,13 +28,13 @@ So, consider making a donation (via paypal) to marcello.grechi@gmail.com (the va
 If you need any specific extraction, let me know so we can figure out whats the best way to do it.
 
 # About me
-My name is Marcello Lins, i am a 23 y/o developer from Brazil who works with BigData and DataMining techniques at the moment.
+My name is Marcello Lins, i am a 25 y/o developer from Brazil who works with BigData and DataMining techniques at the moment.
 
 http://about.me/marcellolins
 
 # What is this project about ? 
 
-The main idea of this project is to gather/mine data about apps of the Google Play Store and build a rich database so that developers, android fans and anyone else can use to generate statistics about the current play store situation
+The main idea of this project is to gather/mine data about apps of the Apple ITunes Store and build a rich database so that developers, iOS fans and anyone else can use to generate statistics about the current play store situation
 
 There are many questions we have no answer at the moment and we should be able to answer than with this database.
 
