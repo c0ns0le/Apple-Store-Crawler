@@ -135,6 +135,13 @@ namespace AppStoreAppUrlsWorker
                     // Iterating over dequeued Messages
                     foreach (var appUrl in appsUrlQueue.GetDequeuedMessages ())
                     {
+                        if (appUrl.Body.IndexOf ("https://itunes.apple.com/us/app") < 0 && appUrl.Body.IndexOf ("https://itunes.apple.com/app/") < 0)
+                        {
+                            _logger.Info ("Invalid Message. Deleting [{0}]", appUrl.Body);
+                            appsUrlQueue.DeleteMessage (appUrl);
+                            continue;
+                        }
+
                         bool processingWorked = true;
 
                         try

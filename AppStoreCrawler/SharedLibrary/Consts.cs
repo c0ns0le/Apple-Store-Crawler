@@ -53,7 +53,7 @@ namespace SharedLibrary
         public static readonly string MONGO_USER             = "GitHubCrawlerUser";
         public static readonly string MONGO_PASS             = "g22LrJvULU5B";
         public static readonly string MONGO_DATABASE         = "MobileAppsData";
-        public static readonly string MONGO_COLLECTION       = "AppleStore_2015_05";
+        public static readonly string MONGO_COLLECTION       = "AppleStore_2015_11";
         public static readonly string MONGO_AUTH_DB          = "MobileAppsData";
         public static readonly int    MONGO_TIMEOUT          = 10000;
     }

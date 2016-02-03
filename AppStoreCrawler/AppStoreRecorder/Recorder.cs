@@ -43,6 +43,7 @@ namespace AppStoreRecorder
             // Initializing Queue
             _logger.Info ("Initializing Queue");
             AWSSQSHelper appsDataQueue = new AWSSQSHelper (_appsDataQueueName, _maxMessagesPerDequeue, _awsKey, _awsKeySecret);
+            AWSSQSHelper backup        = new AWSSQSHelper ("DeadLetter", _maxMessagesPerDequeue, _awsKey, _awsKeySecret);
 
             // Creating MongoDB Instance
             _logger.Info ("Loading MongoDB / Creating Instances");
@@ -148,6 +149,7 @@ namespace AppStoreRecorder
                         {
                             // Deleting the message
                             appsDataQueue.DeleteMessage (appDataMessage);
+                            backup.EnqueueMessage (appDataMessage.Body);
                         }
                     }
                 }

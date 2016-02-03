@@ -27,6 +27,11 @@ So, consider making a donation (via paypal) to marcello.grechi@gmail.com (the va
 
 If you need any specific extraction, let me know so we can figure out whats the best way to do it.
 
+How do I Receive Updates of this project ?
+======================
+
+Subscribe to our <a href="http://eepurl.com/bOlWe5">Exclusive Newsletter</a> to get access to updated batches of data automatically
+
 # About me
 My name is Marcello Lins, i am a 25 y/o developer from Brazil who works with BigData and DataMining techniques at the moment.
 
